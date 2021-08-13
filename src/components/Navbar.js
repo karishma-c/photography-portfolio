@@ -8,19 +8,22 @@ import {
     navLinks
 } from './../styles/navbar.module.css'
 
-const Navbar = () => {
+const Navbar = ({ pageTitle }) => {
     return (
-        <nav className={navbar}>
-            <div className={logo}>
-                <h1 className={logoName}>Vj</h1>
-            </div>
-            <ul className={navItems}>
-                <li className={navLinks}><Link to="/">Home</Link></li>
-                <li className={navLinks}><Link to="/about">About</Link></li>
-            </ul>
-        </nav>
+        <div>
+            <title>{pageTitle}</title>
+            <nav className={navbar}>
+                <div className={logo}>
+                    <h1 className={logoName}>Vj</h1>
+                </div>
+                <ul className={navItems}>
+                    <li className={navLinks}><Link to="/">Home</Link></li>
+                    <li className={navLinks}><Link to="/about">About</Link></li>
+                </ul>
+            </nav>
+        </div>
     )
-  }
+}
   
 export default Navbar
 

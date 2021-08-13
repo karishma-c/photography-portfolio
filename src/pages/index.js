@@ -133,10 +133,11 @@ import { container } from './../styles/index.module.css'
 
 const IndexPage = () => {
   return (
-    <div className={container}>
-      <Navbar></Navbar>
+    <div>
+      <Navbar pageTitle="Home Page"></Navbar>
       <Introduction></Introduction>
     </div>
+    
   )
 }
 

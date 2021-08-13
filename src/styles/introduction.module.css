@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 100px auto;
 }
 .introContent {
@@ -12,10 +12,14 @@
     align-items: space-between;
 }
 .introText {
-    font-size: 32px;
+    font-size: 48px;
+    margin: 0 0 10px;
+    text-align: left;
 }
 .subText {
     font-size: 24px;
+    margin: 0 0 30px;
+    text-align: left;
 }
 .bookBtn {
     width: fit-content;
