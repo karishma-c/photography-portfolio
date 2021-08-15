@@ -127,16 +127,18 @@
 
 // markup
 import * as React from 'react'
+import Gallery from '../components/Gallery'
 import Introduction from '../components/Introduction'
+import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
-import { container } from './../styles/index.module.css'
 
 const IndexPage = () => {
   return (
-    <div>
-      <Navbar pageTitle="Home Page"></Navbar>
+    <Layout>
+      <Navbar></Navbar>
       <Introduction></Introduction>
-    </div>
+      <Gallery></Gallery>
+    </Layout>
     
   )
 }

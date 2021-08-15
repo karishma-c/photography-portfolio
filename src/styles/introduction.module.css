@@ -1,27 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 .introduction {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: 100px auto;
+    flex-flow: column nowrap;
+    align-items: space-evenly;
+    justify-content: center;
+    margin: 100px auto 0;
+    font-family: 'Inter', sans-serif;
 }
-.introContent {
+.introContent, .introSubtext {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: space-between;
+    align-items: flex-start;
+    margin: 0 0 20px 115px;
 }
 .introText {
-    font-size: 48px;
-    margin: 0 0 10px;
+    font-size: 61.04px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 15px 0 0;
     text-align: left;
 }
-.subText {
-    font-size: 24px;
-    margin: 0 0 30px;
-    text-align: left;
+.introSubtext span {
+    padding: 0 10px;
 }
-.bookBtn {
+.district {
+    font-size: 16px;
+    font-weight: 500;
+    color: #67606B;
+    text-align: left;
+    margin: 0;
+}
+/* .bookBtn {
     width: fit-content;
     background-color: blue;
     border: none;
@@ -33,11 +43,11 @@
     padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
-}
-.introImage {
+} */
+/* .introImage {
     justify-content: flex-end;
     width: 300px;
     height: 300px;
     background-color: rgb(105, 215, 243);
     border-radius: 5px;
-}
+} */

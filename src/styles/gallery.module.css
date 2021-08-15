@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+.gallerySection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    font-family: 'Inter', sans-serif;
+}
+.gallery {
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 95px;
+}
+.babyCard, .weddingCard, .modalCard, .natureCard {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 0 0 50px;
+}
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.bottomCenter {
+    color: #3C3341;
+    font-size: 25px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

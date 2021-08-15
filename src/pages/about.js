@@ -4,10 +4,10 @@ import Layout from './../components/Layout'
 
 const AboutPage = () => {
   return (
-    <div>
-      <Navbar pageTitle="About Me"></Navbar>
+    <Layout>
+      <Navbar></Navbar>
       <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
-    </div>
+    </Layout>
   )
 }
 
