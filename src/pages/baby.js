@@ -11,38 +11,72 @@ import {
     babyImageSection,
     heading,
     imageSection,
-    imageDiv
+    imageDiv,
+    modal,
+    myModal,
+    modalContent,
+    modalheader,
+    modalBody,
+    modalFooter,
 } from './../styles/babies.module.css'
 
+
 const BabyPage = () => {
+
+    
+    
     return (
-      <Layout>
-        <Navbar></Navbar>
-        <div className={babyImageSection}>
-            <h1 className={heading}>Babies</h1>
-            <div className={imageSection}>
-                <div className={imageDiv}>
-                    <img src={One} alt="1"></img>
-                </div>
-                <div className={imageDiv}>
-                    <img src={Two} alt="2"></img>
-                </div>
-                <div className={imageDiv}>
-                    <img src={Three} alt="3"></img>
-                </div>
-                <div className={imageDiv}>
-                    <img src={Four} alt="4"></img>
-                </div>
-                <div className={imageDiv}>
-                    <img src={Five} alt="5"></img>
-                </div>
-                <div className={imageDiv}>
-                    <img src={Six} alt="6"></img>
+        <Layout>
+            
+            <Navbar></Navbar>
+            <div className={babyImageSection}>
+                <h1 className={heading}>Babies</h1>
+                <div className={imageSection}>
+                    <div className={imageDiv} onClick={showModal}>                   
+                        <img src={One} alt="1"></img>
+                    </div>
+                    <div className={imageDiv}>
+                        <img src={Two} alt="2"></img>
+                    </div>
+                    <div className={imageDiv}>
+                        <img src={Three} alt="3"></img>
+                    </div>
+                    <div className={imageDiv}>
+                        <img src={Four} alt="4"></img>
+                    </div>
+                    <div className={imageDiv}>
+                        <img src={Five} alt="5"></img>
+                    </div>
+                    <div className={imageDiv}>
+                        <img src={Six} alt="6"></img>
+                    </div>
                 </div>
             </div>
-        </div>
-      </Layout>
+
+            <div id="myModal" className={modal}>
+                <div className={modalContent}>
+                    <div className={modalheader}>
+                    
+                    <h2>Modal Header</h2>
+                    </div>
+                    <div className={modalBody}>
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                    </div>
+                    <div className={modalFooter}>
+                    <h3>Modal Footer</h3>
+                    </div>
+                </div>
+            </div>
+        </Layout>
     )
-  }
+
+    function showModal() {
+        let modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    }
+}
+  
   
   export default BabyPage
+
