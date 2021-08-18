@@ -55,7 +55,7 @@ const BabyPage = () => {
             </div>
 
             <div id="myModal" className={modal}>
-                <div id="modal-content" className={modalContent} onClick={hideModal}>
+                <div id="modal-content" className={modalContent} >
                     <span id="close" className={closeIcon} onClick={hideModal}>&times;</span>
                     <div className={modalImage}>
                         <img id="image" className={image} src="" alt="image"></img>
