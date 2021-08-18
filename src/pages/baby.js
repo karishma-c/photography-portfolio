@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 import Navbar from '../components/Navbar'
 import Layout from '../components/Layout'
 import One from './../assets/images/babies/1.jpg'
@@ -13,12 +14,12 @@ import {
     imageSection,
     imageDiv,
     modal,
-    myModal,
     modalContent,
-    modalheader,
-    modalBody,
-    modalFooter,
+    modalImage,
+    closeIcon,
+    image
 } from './../styles/babies.module.css'
+import './../styles/babies.module.css'
 
 
 const BabyPage = () => {
@@ -29,49 +30,49 @@ const BabyPage = () => {
         <Layout>
             
             <Navbar></Navbar>
-            <div className={babyImageSection}>
+            <div className={babyImageSection} >
                 <h1 className={heading}>Babies</h1>
                 <div className={imageSection}>
-                    <div className={imageDiv} onClick={showModal}>                   
-                        <img src={One} alt="1"></img>
+                    <div className={imageDiv}  >                   
+                        <img src={One} alt="1" id="Imagediv" onClick={showmodal}></img>
                     </div>
                     <div className={imageDiv}>
-                        <img src={Two} alt="2"></img>
+                        <img src={Two} alt="2" id="Imagediv" onClick={showmodal}></img>
                     </div>
                     <div className={imageDiv}>
-                        <img src={Three} alt="3"></img>
+                        <img src={Three} alt="3" id="Imagediv" onClick={showmodal}></img>
                     </div>
                     <div className={imageDiv}>
-                        <img src={Four} alt="4"></img>
+                        <img src={Four} alt="4" id="Imagediv" onClick={showmodal}></img>
                     </div>
                     <div className={imageDiv}>
-                        <img src={Five} alt="5"></img>
+                        <img src={Five} alt="5" id="Imagediv" onClick={showmodal}></img>
                     </div>
                     <div className={imageDiv}>
-                        <img src={Six} alt="6"></img>
+                        <img src={Six} alt="6" id="Imagediv" onClick={showmodal}></img>
                     </div>
                 </div>
             </div>
 
             <div id="myModal" className={modal}>
+                <span id="close" className={closeIcon}>&times;</span>
                 <div className={modalContent}>
-                    <div className={modalheader}>
-                    
-                    <h2>Modal Header</h2>
-                    </div>
-                    <div className={modalBody}>
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                    </div>
-                    <div className={modalFooter}>
-                    <h3>Modal Footer</h3>
+                    <div id="modal-image" className={modalImage}>
+                        <img id="image" className={image} src="" alt="image"></img>
+                        
                     </div>
                 </div>
             </div>
+        
         </Layout>
     )
 
-    function showModal() {
+    function showmodal(e) {
+        
+        let Image = document.getElementById("image");
+        
+        Image.src = e.target.src;
+        
         let modal = document.getElementById("myModal");
         modal.style.display = "block";
     }
