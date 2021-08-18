@@ -55,9 +55,9 @@ const BabyPage = () => {
             </div>
 
             <div id="myModal" className={modal}>
-                <span id="close" className={closeIcon}>&times;</span>
-                <div className={modalContent}>
-                    <div id="modal-image" className={modalImage}>
+                <div id="modal-content" className={modalContent} onClick={hideModal}>
+                    <span id="close" className={closeIcon} onClick={hideModal}>&times;</span>
+                    <div className={modalImage}>
                         <img id="image" className={image} src="" alt="image"></img>
                         
                     </div>
@@ -68,16 +68,17 @@ const BabyPage = () => {
     )
 
     function showmodal(e) {
-        
         let Image = document.getElementById("image");
-        
         Image.src = e.target.src;
-        
         let modal = document.getElementById("myModal");
         modal.style.display = "block";
+    }
+    function hideModal() {
+        let modal = document.getElementById("myModal");
+        modal.style.display = "none";
     }
 }
   
   
-  export default BabyPage
+export default BabyPage
 
