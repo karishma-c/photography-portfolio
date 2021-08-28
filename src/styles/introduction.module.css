@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin: 0 0 20px 115px;
 }
 .introText {
@@ -20,6 +20,15 @@
     margin: 0;
     padding: 0 15px 0 0;
     text-align: left;
+}
+.cameraImage {
+    width: 70px;
+    height: 70px;
+}
+.cameraImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .introSubtext span {
     padding: 0 10px;
@@ -51,3 +60,27 @@
     background-color: rgb(105, 215, 243);
     border-radius: 5px;
 } */
+
+@media(max-width:800px) {
+
+    .introContent, .introSubtext {
+        margin: 0 0 20px 50px;
+    }
+    .introText {
+        font-size: 31.25px;
+    }
+    .cameraImage {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .introContent, .introSubtext {
+        margin: 0 0 20px 30px;
+    }
+    .introContent {
+        align-items: flex-end;
+    }
+}

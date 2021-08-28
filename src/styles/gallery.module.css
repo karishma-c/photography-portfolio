@@ -34,3 +34,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media(max-width: 1100px) {
+    .babyCard, .weddingCard, .modalCard, .natureCard {
+        width: 400px;
+        height: 400px;
+        margin: 0 30px 50px 0;
+    }
+}
+
+@media(max-width: 780px) {
+
+    .gallery {
+        margin: 0 auto;
+        
+    }
+    .babyCard img, .weddingCard img, .modalCard img, .natureCard img {
+        margin: 0 auto 50px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .babyCard, .weddingCard, .modalCard, .natureCard {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 50px;
+    }
+}

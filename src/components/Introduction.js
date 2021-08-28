@@ -5,6 +5,7 @@ import {
     introduction,
     introContent,
     introText,
+    cameraImage,
     introSubtext,
     district
 } from './../styles/introduction.module.css'
@@ -14,7 +15,7 @@ const Introduction = () => {
         <div className={introduction}>
             <div className={introContent}>
                 <h1 className={introText}>Vijay, Photographer</h1>
-                <span><img src={camera} alt="cam"></img></span>
+                <span className={cameraImage}><img src={camera} alt="cam"></img></span>
             </div>
             <div className={introSubtext}>
                 <span><img src={location} alt="loc"></img></span>

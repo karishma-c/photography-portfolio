@@ -38,36 +38,36 @@ const BabyPage = () => {
             <div className={babyImageSection} >
                 <h1 className={heading}>Babies</h1>
                 <div className={imageSection}>
-                    <div className={imageDiv}  >                   
+                    <div className="col-12 col-sm-10 col-md-8 mx-auto col-lg-6 col-xl-6" className={imageDiv}  >                   
                         <img src={One} alt="1" id="Imagediv" onClick={showmodal}></img>
                     </div>
-                    <div className={imageDiv}>
+                    <div className="col-12 col-sm-10 col-md-8 mx-auto col-lg-6 col-xl-6" className={imageDiv}>
                         <img src={Two} alt="2" id="Imagediv" onClick={showmodal}></img>
                     </div>
-                    <div className={imageDiv}>
+                    <div className="col-12 col-sm-10 col-md-8 mx-auto col-lg-6 col-xl-6" className={imageDiv}>
                         <img src={Three} alt="3" id="Imagediv" onClick={showmodal}></img>
                     </div>
-                    <div className={imageDiv}>
+                    <div className="col-12 col-sm-10 col-md-8 mx-auto col-lg-6 col-xl-6" className={imageDiv}>
                         <img src={Four} alt="4" id="Imagediv" onClick={showmodal}></img>
                     </div>
-                    <div className={imageDiv}>
+                    <div className="col-12 col-sm-10 col-md-8 mx-auto col-lg-6 col-xl-6" className={imageDiv}>
                         <img src={Five} alt="5" id="Imagediv" onClick={showmodal}></img>
                     </div>
-                    <div className={imageDiv}>
+                    <div className="col-12 col-sm-10 col-md-8 mx-auto col-lg-6 col-xl-6" className={imageDiv}>
                         <img src={Six} alt="6" id="Imagediv" onClick={showmodal}></img>
                     </div>
                 </div>
             </div>
 
-            <div id="myModal" className={modal}>
-                <div id="modal-content" className={modalContent} >
+            <div id="myModal"  className={modal}>
+                <div id="modal-content" className="col-xl-12 col-md-12 col-sm-12" className={modalContent} >
                     <span id="close" className={closeIcon} onClick={hideModal}>&times;</span>
                     <div className={modalContainer}>
-                        <img id="left-arrow" className={prev} src={leftArrow} alt="image"></img>
-                        <div className={modalImage}>
+                        <img id="left-arrow" className="col-xl-4" className={prev} src={leftArrow} alt="image"></img>
+                        <div className="col-xl-4" className={modalImage}>
                            <img id="image" className={image} src="" alt="image"></img>
                         </div>
-                        <img id="right-arrow" className={next} src={rightArrow} alt="image"></img>
+                        <img id="right-arrow" className="col-xl-4" className={next} src={rightArrow} alt="image"></img>
                     </div>
                 </div>
             </div>

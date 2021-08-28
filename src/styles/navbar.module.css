@@ -28,7 +28,24 @@
     text-decoration: none;
     color: #261C2C;
 }
+.navLinks:nth-child(2) a{
+    margin: 0;
+}
 .linkActive {
     border-bottom: 2px solid #A905B6;
 
+}
+
+@media(max-width:800px) {
+    
+    .navbar {
+       margin: 50px;
+    }
+}
+
+@media(max-width:500px) {
+    
+    .navbar {
+       margin: 50px 30px;
+    }
 }
