@@ -18,7 +18,7 @@
     font-size: 61.04px;
     font-weight: 700;
     margin: 0;
-    padding: 0 15px 0 0;
+    padding: 0 10px 0 0;
     text-align: left;
 }
 .cameraImage {
@@ -78,9 +78,17 @@
 @media(max-width: 500px) {
 
     .introContent, .introSubtext {
-        margin: 0 0 20px 30px;
+        margin: 0 0 20px 20px;
+        width: fit-content;
+    }
+    .introSubtext span {
+        padding: 0 10px 0 0;
     }
     .introContent {
         align-items: flex-end;
+    }
+    .introText {
+        padding: 0 5px 0 0;
+        
     }
 }
